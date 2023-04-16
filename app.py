@@ -62,7 +62,7 @@ def predict():
         prediction = "Pathologic"
     
     # Restituzione dell'etichetta di classe corrispondente come risposta alla richiesta POST
-    return str(prediction)
+    return render_template('home.html', prediction=prediction)
 
 # Avvio dell'app Flask
 if __name__ == '__main__':
